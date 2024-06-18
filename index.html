@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="libs/css/main.css">
+    </head>
+    <body>
+        <div class="search-modal">
+            <form action="#" class="search-modal-form">
+                <input type="text" class="search-modal-input" placeholder="Pesquisar">
+                <button type="submit" class="search-modal-submit"><ion-icon name="search-outline"></ion-icon></button>
+            </form>
+            <div class="search-modal-background"></div>
+        </div>
+        <div class="container">
+            <div class="navbar">
+                <a href="#" class="navbar-link">
+                    <img src="libs/images/logo.svg" class="navbar-logo">
+                </a>
+                <div class="navbar-search"><ion-icon name="search-outline"></ion-icon></div>
+            </div>
+            <div class="main-header">
+                <h1 class="main-title">Os melhores doces para sua festa</h1>
+                <p class="main-text">Saboreie os melhores doces artesanais feitos com ingredientes selecionados de alta qualidade e faça seu dia ainda mais doce</p>
+            </div>
+            <div class="catalog-header">
+                <div class="catalog-header-container">
+                    <h1 class="catalog-header-title">Catálogo</h1>
+                    <p class="catalog-header-subtitle">38 itens</p>
+                </div>
+                <div class="catalog-header-container catalog-header-container-horizontal">
+                    <span class="catalog-slider-button" id="catalog-slider-prev"><ion-icon name="chevron-back-outline"></ion-icon></span>
+                    <span class="catalog-slider-button" id="catalog-slider-next"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                    <a href="#" class="catalog-header-button catalog-header-button-highlight">Ver tudo</a>
+                </div>
+            </div>
+            <!-- <div class="catalog catalog-empty">
+                <p class="catalog-text">Nenhum produto encontrado</p>
+            </div> -->
+            <div class="catalog catalog-slider">
+                <div class="catalog-item catalog-item-slider" item-title="Box com 100 un. de Doces Sortidos" item-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec erat dui, aliquam vitae tristique in, pulvinar vitae tortor. Ut ullamcorper aliquam nibh, quis facilisis ligula aliquet eget. Etiam pretium ante nec varius placerat. Fusce fringilla tortor hendrerit est scelerisque aliquam." item-price="R$ 119,90" item-image="libs/images/img-1.jpg" item-id="123ABC">
+                    <img src="libs/images/img-1.jpg" class="catalog-item-image catalog-item-slider-image">
+                    <div class="catalog-item-content">
+                        <h1 class="catalog-item-title">Box com 100 un. de Doces Sortidos</h1>
+                        <div class="catalog-item-price-container">
+                            <span class="catalog-item-price-symbol">R$</span>
+                            <h1 class="catalog-item-price">119,90</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item catalog-item-slider" item-title="10 Brigadeiros de Crème brûlée" item-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec erat dui, aliquam vitae tristique in, pulvinar vitae tortor. Ut ullamcorper aliquam nibh, quis facilisis ligula aliquet eget. Etiam pretium ante nec varius placerat. Fusce fringilla tortor hendrerit est scelerisque aliquam." item-price="R$ 49,90" item-image="libs/images/img-2.jpg" item-id="123ABC">
+                    <img src="libs/images/img-2.jpg" class="catalog-item-image catalog-item-slider-image">
+                    <div class="catalog-item-content">
+                        <h1 class="catalog-item-title">10 Brigadeiros de Crème brûlée</h1>
+                        <div class="catalog-item-price-container">
+                            <span class="catalog-item-price-symbol">R$</span>
+                            <h1 class="catalog-item-price">49,90</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item catalog-item-slider" item-title="Trio de Trufas Gourmet" item-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec erat dui, aliquam vitae tristique in, pulvinar vitae tortor. Ut ullamcorper aliquam nibh, quis facilisis ligula aliquet eget. Etiam pretium ante nec varius placerat. Fusce fringilla tortor hendrerit est scelerisque aliquam." item-price="R$ 39,90" item-image="libs/images/img-3.jpg" item-id="123ABC">
+                    <img src="libs/images/img-3.jpg" class="catalog-item-image catalog-item-slider-image">
+                    <div class="catalog-item-content">
+                        <h1 class="catalog-item-title">Trio de Trufas Gourmet Premium</h1>
+                        <div class="catalog-item-price-container">
+                            <span class="catalog-item-price-symbol">R$</span>
+                            <h1 class="catalog-item-price">39,90</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item catalog-item-slider" item-title="Barra Recheada Red Velvet" item-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec erat dui, aliquam vitae tristique in, pulvinar vitae tortor. Ut ullamcorper aliquam nibh, quis facilisis ligula aliquet eget. Etiam pretium ante nec varius placerat. Fusce fringilla tortor hendrerit est scelerisque aliquam." item-price="R$ 19,90" item-image="libs/images/img-4.jpg" item-id="123ABC">
+                    <img src="libs/images/img-4.jpg" class="catalog-item-image catalog-item-slider-image">
+                    <div class="catalog-item-content">
+                        <h1 class="catalog-item-title">Barra Recheada Red Velvet</h1>
+                        <div class="catalog-item-price-container">
+                            <span class="catalog-item-price-symbol">R$</span>
+                            <h1 class="catalog-item-price">19,90</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-item catalog-item-slider" item-title="50 Brigadeiros de Ninho com Nutella" item-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec erat dui, aliquam vitae tristique in, pulvinar vitae tortor. Ut ullamcorper aliquam nibh, quis facilisis ligula aliquet eget. Etiam pretium ante nec varius placerat. Fusce fringilla tortor hendrerit est scelerisque aliquam." item-price="R$ 59,90" item-image="libs/images/img-5.jpg" item-id="123ABC">
+                    <img src="libs/images/img-5.jpg" class="catalog-item-image catalog-item-slider-image">
+                    <div class="catalog-item-content">
+                        <h1 class="catalog-item-title">50 Brigadeiros de Ninho com Nutella</h1>
+                        <div class="catalog-item-price-container">
+                            <span class="catalog-item-price-symbol">R$</span>
+                            <h1 class="catalog-item-price">59,90</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h1 class="section-title">Nossa história</h1>
+                <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quibusdam sunt nihil, ipsa debitis, expedita ipsam explicabo eveniet praesentium dolor excepturi aperiam sint magni vel amet velit a! Expedita, ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero minus eos, aliquid provident id culpa eius ipsa error cum laboriosam, voluptatem necessitatibus porro illo inventore, dolore ipsam mollitia ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit numquam consequatur animi vero nihil adipisci necessitatibus provident saepe! Maiores et, blanditiis necessitatibus voluptate illum distinctio tenetur laborum reiciendis ipsum fugit.</p>
+            </div>
+            <div class="footer">
+                <div class="footer-container">
+                    <a href="#" class="footer-social"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a href="#" class="footer-social"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#" class="footer-social"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" class="footer-social"><ion-icon name="logo-tiktok"></ion-icon></a>
+                </div>
+                <button class="footer-share">Compartilhar</button>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="libs/js/main.js"></script>
+    </body>
+</html>
