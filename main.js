@@ -48,4 +48,15 @@ $(".catalog-item").click(function() {
 $('.catalog-slider').on('wheel', function(e){
     e.preventDefault();
     $(this).scrollLeft($(this).scrollLeft() + e.originalEvent.deltaY);
-}); 
+});
+
+// Abre o modal do produto
+$(".catalog-item, .product-modal-background, .product-modal-close").click(function() {
+    $(".product-modal").toggleClass("product-modal-open");
+
+    $(".product-modal-image").attr("src", $(this).attr("item-image"));
+    $(".product-modal-title").text($(this).attr("item-title"));
+    $(".product-modal-price").text($(this).attr("item-price"));
+    $(".product-modal-description").text($(this).attr("item-description"));
+    $(".product-modal-button").attr("href", "https://whatsapp.com/id?="+$(this).attr("item-id"));
+});
